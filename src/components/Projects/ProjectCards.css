@@ -1,0 +1,119 @@
+/* Project Cards Styles - Matching Home.js */
+.project-card-view {
+  background: rgba(157, 78, 221, 0.02) !important;
+  border: 1px solid rgba(157, 78, 221, 0.1) !important;
+  border-radius: 16px !important;  /* Slightly larger border radius */
+  transition: all 0.3s ease !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-view:hover {
+  transform: translateY(-8px) !important;
+  border-color: #9d4edd !important;
+  background: rgba(157, 78, 221, 0.05) !important;
+  box-shadow: 0 15px 35px rgba(157, 78, 221, 0.2) !important;
+}
+
+.project-card-view .card-img-top {
+  transition: transform 0.5s ease;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.project-card-view:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.project-card-view .card-body {
+  padding: 1.5rem !important;
+}
+
+.project-card-view .card-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-card-view .card-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #c0c0c0;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.project-card-view .btn {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  min-width: 110px;
+}
+
+.project-card-view .btn:hover {
+  transform: translateY(-2px);
+}
+
+.project-card-view .btn svg {
+  color: #9d4edd;
+  transition: all 0.2s ease;
+  font-size: 1.1rem;
+}
+
+.project-card-view .btn:hover svg {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card-view .card-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .project-card-view .card-text {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  .project-card-view .btn {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 1rem !important;
+    min-width: 100px !important;
+  }
+  
+  .project-card-view .card-body {
+    padding: 1.2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card-view .card-title {
+    font-size: 1.1rem !important;
+  }
+  
+  .project-card-view .card-text {
+    font-size: 0.9rem !important;
+  }
+  
+  .project-card-view .btn {
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.8rem !important;
+    min-width: 90px !important;
+  }
+  
+  .project-card-view .card-body {
+    padding: 1rem !important;
+  }
+}
