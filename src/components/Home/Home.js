@@ -21,7 +21,6 @@ import {
   FaHtml5,
   FaReact,
   FaPython,
-  FaJava,
   FaJs,
   FaCss3Alt
 } from "react-icons/fa";
@@ -31,10 +30,9 @@ import {
   SiCplusplus, 
   SiC,
   SiSqlite,
-  SiGit,
   SiGithub
 } from "react-icons/si";
-import { MdEmail, MdPhone } from "react-icons/md";
+import { MdEmail} from "react-icons/md";
 
 import profileImg from "../../Assets/profile.png";
 import "./Home.css";
@@ -42,7 +40,7 @@ import "./Home.css";
 function Home() {
   const navigate = useNavigate();
   const [openFaq, setOpenFaq] = useState(null);
-  const [activeSection, setActiveSection] = useState('home');
+ // const [activeSection, setActiveSection] = useState('home');
 
   // Education data
   const education = [
